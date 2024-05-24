@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Connector, useChainId, useConnect } from 'wagmi';
+import * as React from "react";
+import { Connector, useChainId, useConnect } from "wagmi";
 
 export function Connect() {
   const chainId = useChainId();
@@ -7,13 +7,16 @@ export function Connect() {
 
   return (
     <div className="buttons">
-      {connectors.map((connector) => (
-        <ConnectorButton
-          key={connector.uid}
-          connector={connector}
-          onClick={() => connect({ connector, chainId })}
-        />
-      ))}
+      {connectors.map((connector) => {
+        console.log("a", connector);
+        return (
+          <ConnectorButton
+            key={connector.uid}
+            connector={connector}
+            onClick={() => connect({ connector, chainId })}
+          />
+        );
+      })}
     </div>
   );
 }
