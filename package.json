@@ -9,13 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
     "@tanstack/react-query": "5.0.0-beta.35",
+    "core-js": "^3.37.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "regenerator-runtime": "^0.14.1",
     "viem": "latest",
     "wagmi": "latest"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.24.6",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.4",
