@@ -4,8 +4,16 @@
     [
       "@babel/preset-env",
       {
+        "useBuiltIns": "entry",
+        "corejs": 3,
         "targets": {
-          "browsers": "> 0.25%, not dead"
+          "browsers": [
+            "last 2 versions",
+            ">= 1%",
+            "not dead",
+            "Android >= 4.4",
+            "ios >= 9"
+          ]
         }
       }
     ]
